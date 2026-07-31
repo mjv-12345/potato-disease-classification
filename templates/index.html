@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Potato Disease Detection</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Potato Disease Detection</h1>
+
+        <p class="subtitle">
+            Upload a potato leaf image and let our AI detect the disease.
+        </p>
+
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+
+            <input
+                type="file"
+                name="image"
+                accept="image/*"
+                required>
+
+            <button type="submit">
+                Predict Disease
+            </button>
+
+        </form>
+
+        {% if disease %}
+
+        <div class="result">
+
+            <h2>Prediction</h2>
+
+            <h3>{{ disease }}</h3>
+
+            <p>Confidence : {{ confidence }}</p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>

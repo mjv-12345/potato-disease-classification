@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4CAF50, #2E8B57);
+}
+
+.container {
+    width: 420px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #f5f5f5;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="file"] {
+    padding: 12px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button {
+    padding: 14px;
+    background: #1B5E20;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2E7D32;
+    transform: scale(1.03);
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+}
+
+.result h2 {
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+
+.result h3 {
+    font-size: 28px;
+    color: #1B5E20;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 18px;
+    color: #444;
+}
