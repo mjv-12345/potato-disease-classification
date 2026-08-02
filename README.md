@@ -1,21 +1,44 @@
-# 🥔 DL Potato
+# 🥔 Potato Disease Classification using Deep Learning
 
-An end-to-end Deep Learning project for Potato Disease Classification using TensorFlow, FastAPI, and Streamlit.
+A deep learning-based web application that classifies potato leaf images into three categories:
 
-## Features
+- 🌱 Healthy
+- 🦠 Early Blight
+- 🦠 Late Blight
 
-- Potato Disease Classification
-- TensorFlow CNN Model
-- FastAPI Backend
-- Streamlit Frontend
-- Docker Support
-- Cloud Deployment
+The project uses a Convolutional Neural Network (CNN) built with TensorFlow/Keras and provides a Flask-based web interface where users can upload a potato leaf image and receive a disease prediction with confidence.
 
-## Tech Stack
+---
 
-- Python
-- TensorFlow
-- FastAPI
-- Streamlit
-- OpenCV
-- Docker
+## 🚀 Live Demo
+
+🔗 **Live Application:**  
+_Add your Render URL here after deployment_
+
+🔗 **GitHub Repository:**  
+https://github.com/mjv-12345/potato-disease-classification
+
+---
+
+## 📌 Project Overview
+
+Potato diseases such as Early Blight and Late Blight can significantly affect crop production.
+
+This project aims to provide an automated image-based classification system that can identify the condition of a potato leaf using a trained CNN model.
+
+The complete pipeline includes:
+
+```text
+Leaf Image
+    ↓
+Image Preprocessing
+    ↓
+Data Augmentation
+    ↓
+CNN Model
+    ↓
+Disease Classification
+    ↓
+Confidence Score
+    ↓
+Flask Web Application
