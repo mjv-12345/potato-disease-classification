@@ -28,4 +28,4 @@ def predict_image():
         confidence=f"{confidence:.2%}"
     )
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
